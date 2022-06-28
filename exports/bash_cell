@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # save command line arguments
-script_id=$1
-script_description=$2
+cell_id=$1
+cell_description=$2
 products_dir=${REPRO_DEMO_OUT_DIRNAME}
 
 mkdir -p ${products_dir}
@@ -15,27 +15,25 @@ else
 fi
 
 # define name of result file
-script_file=${tmp_dir}/${script_id}.sh
-output_file=${tmp_dir}/${script_id}.txt
+cell_code=${tmp_dir}/${cell_id}.sh
+cell_output=${tmp_dir}/${cell_id}.txt
 
-# copy query from stdin to the query file
-echo "# ${script_description}" > ${script_file}
+# copy stdin to the cell code file
+cat /dev/null > ${cell_code}
 IFS=''; while read line
 do
-    echo "$line" >> ${script_file}
+    echo "$line" >> ${cell_code}
 done
 
 # execute the script on the given data file and save results
-bash ${script_file} > ${output_file}
+bash ${cell_code} > ${cell_output}
 
 # print the script results
-echo
-echo "********************************************** CELL ${script_id} ************************************************"
-echo
-cat ${script_file}
-echo "------------------------------------------- ${script_id} OUTPUTS ------------------------------------------------"
-echo
-cat ${output_file}
+echo "=========================================== BASH CELL ${cell_id} =============================================="
+cat ${cell_code}
+echo "--------------------------------------------- OUTPUTS -------------------------------------------------"
+cat ${cell_output}
+echo "======================================================================================================="
 echo
 
 
