@@ -7,6 +7,6 @@ RUN bash /repro/dist/setup
 
 USER repro
 
-RUN repro.require shell-notebook exports --demo
+RUN repro.require shell-notebook exports --demos
 
 CMD  /bin/bash -il
