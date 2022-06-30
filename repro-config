@@ -1,0 +1,14 @@
+REPRO_NAME=shell-notebook
+REPRO_DOCKER_ORG=cirss
+REPRO_IMAGE_TAG=latest
+
+#PARENT_IMAGE=cirss/repro-parent:latest
+#REPRO_DOCKER_OPTIONS=-p 9999:9999
+#REPRO_MOUNT_CLI=--volume $(CURDIR)/../go-cli:/mnt/go-cli
+#REPRO_MOUNT_BLAZE=--volume $(CURDIR)/../blaze:/mnt/blaze
+#REPRO_MOUNT_OTHER_VOLUMES=$(REPRO_MOUNT_CLI) $(REPRO_MOUNT_BLAZE)
+
+image:                  build-image   ## 
+start:                  start-repro   ## 
+
+## 
