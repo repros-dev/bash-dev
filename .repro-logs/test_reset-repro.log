@@ -10,7 +10,7 @@ I MESG Resetting the 'repro' module
 I MESG Re-initializing trim files for module 'repro'
 I MESG Resetting the 'shell-notebook' module
 I MESG Re-initializing trim files for module 'shell-notebook'
-I MESG Copying /home/repro/repro-modules/shell-notebook-exports/demo-Makefile to the 'shell-notebook' trim directory (/mnt/shell-notebook/.shell-notebook)
+I MESG Copying /home/repro/repro-modules/shell-notebook-exports/demo-makefile to the 'shell-notebook' trim directory (/mnt/shell-notebook/.shell-notebook)
 I MESG Ensuring other files listed in the 'shell-notebook' module trim manifest are in the module trim directory (/mnt/shell-notebook/.shell-notebook)
 I MESG Copying trim file Makefile.demo-runner from /home/repro/repro-modules/shell-notebook-exports to /mnt/shell-notebook/.shell-notebook
 I MESG Resetting the REPRO target mapping file (/mnt/shell-notebook/.repro/repro-targets)
