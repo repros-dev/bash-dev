@@ -10,8 +10,9 @@ I MESG Initializing module 'shell-notebook'
 I MESG Initializing trim files for module 'shell-notebook'
 I MESG Ensuring other files listed in the 'shell-notebook' module trim manifest are in the module trim directory (/mnt/shell-notebook/.shell-notebook)
 I MESG Ensuring that the REPRO target mapping file exists (/mnt/shell-notebook/.repro/repro-targets)
-I MESG Services not being started during session initialization because REPRO_SERVICES_STARTUP is not set to 'auto'
-I MESG Done initializing REPRO session
-I MESG Starting services now because REPRO_SERVICES_STARTUP set to 'manual'
+I MESG Starting services during session initialization because REPRO_SERVICES_STARTUP set to 'auto'
 I MESG Invoking implementations of REPRO target 'start-services'
 I MESG No implementations of the 'start-services' REPRO target were found
+I MESG Done initializing REPRO session
+I MESG Invoking implementations of REPRO target 'run-demo'
+I MESG Invoking the 'shell-notebook:demo:run' target

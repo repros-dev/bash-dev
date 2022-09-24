@@ -1,31 +1,19 @@
-I MESG Initialized REPRO logging system and macros
-D MESG Already loaded logging functions
+I MESG Loaded repro logging functions
+I MESG Initialized repro logging system
+I MESG Loaded repro base functions
 I MESG Initializing REPRO session
 I MESG Building PATH variable
 I MESG Skipping rest of session initialization because REPRO_DEFER_INIT is set to 'true'
 I MESG Resetting REPRO
 I MESG Resetting all modules
-D MESG Iterating over the list of installed modules in the module order file (/home/repro/.repro-order)
 I MESG Resetting the 'repro' module
-D EVAL repro.initialize_module_trim repro --reset
 I MESG Re-initializing trim files for module 'repro'
-D MESG Looking for Makefiles in the 'repro' module installation directory (/home/repro/repro-modules/repro-master) to copy to the module trim directory (/mnt/shell-notebook/.repro)
-D MESG Done initializing trim files for module 'repro'
 I MESG Resetting the 'shell-notebook' module
-D EVAL repro.initialize_module_trim shell-notebook --reset
 I MESG Re-initializing trim files for module 'shell-notebook'
-D MESG Looking for Makefiles in the 'shell-notebook' module installation directory (/home/repro/repro-modules/shell-notebook-exports) to copy to the module trim directory (/mnt/shell-notebook/.shell-notebook)
-I MESG Copying /home/repro/repro-modules/shell-notebook-exports/Makefile-demos to the 'shell-notebook' trim directory (/mnt/shell-notebook/.shell-notebook)
-I MESG Ensuring other files listed in the trim manifest for module shell-notebook are in the module dot directory (/mnt/shell-notebook/.shell-notebook)
+I MESG Copying /home/repro/repro-modules/shell-notebook-exports/demo-Makefile to the 'shell-notebook' trim directory (/mnt/shell-notebook/.shell-notebook)
+I MESG Ensuring other files listed in the 'shell-notebook' module trim manifest are in the module trim directory (/mnt/shell-notebook/.shell-notebook)
 I MESG Copying trim file Makefile.demo-runner from /home/repro/repro-modules/shell-notebook-exports to /mnt/shell-notebook/.shell-notebook
-D MESG Done initializing trim files for module 'shell-notebook'
-D MESG Done resetting all modules
 I MESG Resetting the REPRO target mapping file (/mnt/shell-notebook/.repro/repro-targets)
 I MESG Installing a default (empty) target mapping file to /mnt/shell-notebook/.repro/repro-targets
-D MESG Iterating over the list of installed modules in the module order file (/home/repro/.repro-order)
-D MESG Looking for targets in the 'repro' module
-D MESG Looking for targets in the 'shell-notebook' module
-I MESG Mapping the 'run' target in the 'demos' profile of the 'shell-notebook' module to the REPRO 'run-demos' target
-I MESG Mapping the 'clean' target in the 'demos' profile of the 'shell-notebook' module to the REPRO 'clean-demos' target
-D MESG Done building the REPRO target mapping file
-D MESG Done resetting REPRO
+I MESG Mapping the 'shell-notebook:demo:run' target to the REPRO 'run-demo' target
+I MESG Mapping the 'shell-notebook:demo:clean' target to the REPRO 'clean-demo' target

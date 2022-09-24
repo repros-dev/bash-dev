@@ -1,0 +1,11 @@
+
+------- Cleaning example 01-quoting/ ----------------
+removed './run.txt'
+removed './tmp/D1.sh'
+removed './tmp/D1.txt'
+removed './tmp/D2.sh'
+removed './tmp/D2.txt'
+removed './tmp/D3.sh'
+removed './tmp/D3.txt'
+rmdir: removing directory, './tmp'
+rmdir: removing directory, './products'

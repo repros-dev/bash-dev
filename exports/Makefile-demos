@@ -1,5 +1,0 @@
-run:
-	make -C ${REPRO_MNT}/demos run
-
-clean:
-	make -C ${REPRO_MNT}/demos clean
