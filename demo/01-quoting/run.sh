@@ -2,7 +2,7 @@
 
 # *****************************************************************************
 
-bash_cell D1 << END_CELL
+bash_cell "D 1" << END_CELL
 # print 'hello world' using echo and two unquoted arguments
 echo hello world
 echo hello   world

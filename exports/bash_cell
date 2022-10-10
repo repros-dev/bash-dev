@@ -1,12 +1,13 @@
 #!/bin/bash
 
-# save command line arguments
+# use first argument as the cell identifier
 cell_id=$1
-cell_description=$2
-products_dir=${REPRO_DEMO_OUT_DIRNAME}
 
+# ensure presence directory for storing products of cell execution
+products_dir=${REPRO_DEMO_OUT_DIRNAME}
 mkdir -p ${products_dir}
 
+# create a directory for storing temporary files associated with cell execution
 if [[ -n REPRO_DEMO_TMP_DIRNAME ]] ; then
     tmp_dir=${REPRO_DEMO_TMP_DIRNAME}
     mkdir -p ${tmp_dir}
@@ -14,25 +15,25 @@ else
     tmp_dir=$(mktemp --tmpdir=/tmp -d bash_dev_XXXXXXX)
 fi
 
-# define name of result file
-cell_code=${tmp_dir}/${cell_id}.sh
-cell_output=${tmp_dir}/${cell_id}.txt
+# name the temporary files for the cell script and its stdout
+cell_script=${tmp_dir}/${cell_id}.sh
+cell_stdout=${tmp_dir}/${cell_id}.txt
 
-# copy stdin to the cell code file
-cat /dev/null > ${cell_code}
+# copy stdin to the cell script file
+cat /dev/null > "${cell_script}"
 IFS=''; while read line
 do
-    echo "$line" >> ${cell_code}
+    echo "$line" >> "${cell_script}"
 done
 
-# execute the script on the given data file and save results
-bash ${cell_code} > ${cell_output}
+# execute the script and save its output
+bash "${cell_script}" > ${cell_stdout}
 
-# print the script results
-echo "=========================================== BASH CELL ${cell_id} =============================================="
-cat ${cell_code}
+# print the script and any text it wrote to stdout
+echo "=========================================== BASH CELL | ${cell_id} ============================================"
+cat "${cell_script}"
 echo "--------------------------------------------- OUTPUTS -------------------------------------------------"
-cat ${cell_output}
+cat ${cell_stdout}
 echo "-------------------------------------------------------------------------------------------------------"
 echo
 echo
