@@ -1,1 +1,2 @@
 repro.env SHELL_NOTEBOOK_DOT_DIR '$(repro.trim_dir_name_for_module shell-notebook)'
+repro.env SHELL_NOTEBOOK_BANNER_WIDTH 80
