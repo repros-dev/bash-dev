@@ -66,6 +66,6 @@ banner_print "BASH CELL | ${cell_id}" '='
 cat "${cell_script}"
 banner_print 'CELL OUTPUTS'
 cat ${cell_stdout}
-banner_print
+banner_print '' '^'
 echo
 echo
