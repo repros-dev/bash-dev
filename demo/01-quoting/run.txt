@@ -1,16 +1,16 @@
-=============================== BASH CELL | D 1 ================================
+=============================== bash cell | D 1 ================================
 # print 'hello world' using echo and two unquoted arguments
 echo hello world
 echo hello   world
 echo   hello   world
---------------------------------- CELL OUTPUTS ---------------------------------
+--------------------------------- cell outputs ---------------------------------
 hello world
 hello world
 hello world
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-================================ BASH CELL | D2 ================================
+================================ bash cell | D2 ================================
 # print '  hello  world' using echo and a single quoted argument
 echo '  hello  world'
 echo "  hello  world"
@@ -18,7 +18,7 @@ echo '  ''hello''  ''world'
 echo "  ""hello""  ""world"
 echo '  hello  world'
 echo '  hello  world'
---------------------------------- CELL OUTPUTS ---------------------------------
+--------------------------------- cell outputs ---------------------------------
   hello  world
   hello  world
   hello  world
@@ -28,13 +28,13 @@ echo '  hello  world'
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-================================ BASH CELL | D3 ================================
+================================ bash cell | D3 ================================
 # print '  hello  world' using echo and two quoted arguments
 echo '  hello' ' world'
 echo "  hello" " world"
 echo '  hello'    ' world'
 echo "  hello"    " world"
---------------------------------- CELL OUTPUTS ---------------------------------
+--------------------------------- cell outputs ---------------------------------
   hello  world
   hello  world
   hello  world

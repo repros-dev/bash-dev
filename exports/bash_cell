@@ -62,9 +62,9 @@ done
 bash "${cell_script}" > ${cell_stdout}
 
 # print the script and any text it wrote to stdout
-banner_print "BASH CELL | ${cell_id}" '='
+banner_print "bash cell | ${cell_id}" '='
 cat "${cell_script}"
-banner_print 'CELL OUTPUTS'
+banner_print 'cell outputs'
 cat ${cell_stdout}
 banner_print '' '^'
 echo
